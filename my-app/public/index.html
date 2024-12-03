@@ -16,6 +16,7 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="stylesheet" href="../pages/song.js" />
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -40,6 +41,24 @@
       </nav>
     </header>
     <h1>LOOK AT MEEEEEEEEEEEEEEE</h1>
+    <h1 data-scroll>Hey</h1>
+    <div data-scroll-container>
+      <div data-scroll-section>
+        <h1 data-scroll>Hey</h1>
+        <p data-scroll>👋</p>
+      </div>
+      <div data-scroll-section>
+        <h2 data-scroll data-scroll-speed="1">What's up?</h2>
+        <p data-scroll data-scroll-speed="2">😬</p>
+      </div>
+    </div>
+    <p data-scroll>👋</p>
+    <script src="locomotive-scroll.min.js"></script>
+    <script>
+      (function () {
+        var scroll = new LocomotiveScroll();
+      })();
+    </script>
 
     <a href="../pages/song.js"><button>按我</button></a>
 
